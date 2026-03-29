@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.business-card {
+  width: 300px;
+  background-color: #1a1a2e;
+  padding: 20px;
+  margin: 100px auto 0;
+  text-align: center;
+  font-size: 16px;
+  color: #f0ede8;
+  border-radius: 2px;
+  position: relative;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.business-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a96e, #e8d5b0, #c9a96e);
+}
+
+.profile-image {
+  max-width: 100%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c9a96e;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #c9a96e;
+}
+
+.designation {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #a0a0b8;
+}
+
+.company {
+  font-size: 13px;
+  font-weight: 500;
+  color: #f0ede8;
+  letter-spacing: 0.3px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(201, 169, 110, 0.25);
+  margin: 14px 0;
+}
+
+.social-media h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a0a0b8;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.social-media a {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #c9a96e;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.social-media a:hover {
+  color: #e8d5b0;
+}
+
+a {
+  text-decoration: none;
+  color: #c9a96e;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.portfolio-link {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #1a1a2e;
+  background-color: #c9a96e;
+  padding: 7px 20px;
+  border-radius: 1px;
+  margin: 6px 0;
+  transition: background-color 0.2s ease;
+}
+
+.portfolio-link:hover {
+  background-color: #e8d5b0;
+}
